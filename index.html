@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập selector</title>
+</head>
+
+<body>
+
+    <style>
+        #warpper {
+            max-width: 960px;
+            margin: 0px auto;
+        }
+
+        #title {
+            background: antiquewhite;
+            font-size: 70px;
+            text-align: center;
+            /* text-transform:uppercase; */
+            /* text-align: justify; */
+            text-transform: capitalize;
+/* text-decoration: line-through red dotted; */ 
+        }
+
+        h1:nth-child(odd) {
+            color: red;
+        }
+
+        p:first-child {
+            color: red;
+        }
+
+        input:checked+label {
+            color: red;
+        }
+    </style>
+    <div id="warpper">
+        <div id="title">Bài tập selector </div>
+        <section>
+            <article>
+                <h1>What is Lorem Ipsum?
+                </h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </article>
+            <h1>Tại sao sử dụng nó</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </section>
+        <h1>Khóa Học</h1>
+        <form action="">
+
+            <input type="checkbox" id="html">
+            <label for="html">Html Css</label><br>
+            <input type="checkbox" id="Bostrap">
+            <label for="Bostrap">Bostrap</label>
+            <br>
+            <input type="checkbox" id="Php">
+            <label for="Php">Php Master</label>
+
+        </form>
+    </div>
+</body>
+
+</html>
